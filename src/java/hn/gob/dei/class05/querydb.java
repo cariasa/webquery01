@@ -36,7 +36,26 @@ public class querydb extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Consultar la Base de Datos</title>");            
+            out.println("<title>Consultar la Base de Datos</title>");  
+            out.println(
+                "<style>\n" +
+                "table {\n" +
+                "    font-family: arial, sans-serif;\n" +
+                "    border-collapse: collapse;\n" +
+                "    width: 100%;\n" +
+                "}\n" +
+
+                "td, th {\n" +
+                "    border: 1px solid #dddddd;\n" +
+                "    text-align: left;\n" +
+                "    padding: 8px;\n" +
+                "}\n" +
+
+                "tr:nth-child(even) {\n" +
+                "    background-color: #dddddd;\n" +
+                "}\n" +
+                "</style>"
+                    );
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Consultar Empleados</h1>");
